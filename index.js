@@ -25,3 +25,39 @@ function getUpper() {
 function getSymbol() {
   return symbol[Math.floor(Math.random() * symbol.length)];
 }
+
+function generatePassword() {
+  let length = pwLengthEl.value;
+  let passValue = '';
+
+    for (let i = 0; i < length; i++) {
+      let x = generateCheck();
+      passValue += x;
+    }
+
+  pwContaintEl.innerText = passValue;
+  console.log(passValue + ' length: '+ passValue.length)
+}
+
+function generateCheck() {
+  let gChecked = [];
+
+  
+  if (numberEl.checked) {
+      gChecked.push(getNumber());
+    }
+    if (lowerEl.checked) {
+        gChecked.push(getLower());
+    }
+    if (upperEl.checked) {
+        gChecked.push(getUpper());
+    }
+    if (symbolEl.checked) {
+        gChecked.push(getSymbol());
+    }
+    if (gChecked.length === 0) return '';
+
+  return gChecked[Math.floor(Math.random() * gChecked.length)];
+}
+
+generateEl.addEventListener('click', generatePassword);

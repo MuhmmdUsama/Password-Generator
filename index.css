@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.37721518987341773) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  margin: auto;
+  font-family: Tahoma, Arial;
+}
+
+.container {
+  width: 300px;
+  background-color: #03295c;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.pw-header {
+  /* margin: 5px; */
+  border-radius: 10px;
+  background-color: #dcdcdc;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.pw-containt {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pw-containt {
+  padding: auto;
+  margin: auto;
+}
+
+#copy {
+  height: 2.5rem;
+  width: 3rem;
+  border: none;
+  background: #e83283;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.length input {
+  width: 50px;
+  margin-left: 6rem;
+}
+
+.controls {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+#generate {
+  border: none;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.3rem;
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+background-color: var(--bs-body-bg);
